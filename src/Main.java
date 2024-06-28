@@ -5,9 +5,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
-        int opcion=0;
+        int opcion;
         double cantidadAConvertir;
         String menu = """
+                ***************************************
+                Conversor de divisas
+                
                 1.- Dolar USD => peso argentino
                 2.- Peso argentino => dolar USD
                 3.- Dolar USD => peso brasileño
@@ -15,6 +18,9 @@ public class Main {
                 5.- Dolar USD => peso colombiano
                 6.- Peso colombiano => dolar USD
                 7.- Salir
+                
+                Elija una opcion valida :D
+                ***************************************
                 """;
         CalculadoraDeDivisas monedas = new CalculadoraDeDivisas();
         Scanner capturar = new Scanner(System.in);
@@ -23,6 +29,7 @@ public class Main {
             System.out.print("Ingresa la opcion: ");
             opcion = capturar.nextInt();
             if (opcion==7){
+                System.out.println("Gracias por usar el conversor de divisas :D");
                 break;
             }
             System.out.print("Ingresa la cantidad a convertir: ");
