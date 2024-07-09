@@ -8,6 +8,8 @@ git init
 
 git remote add origin https://github.com/Danis-vida/ConversorDeMonedas.git
 
+git pull origin main
+
 git pull ConversorDeMonedas main
 
 git push ConversorDeMonedas main
